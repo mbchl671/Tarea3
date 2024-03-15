@@ -1,0 +1,153 @@
+*{
+    background-color: black;
+    font-size: xx-large;
+}
+.padre {
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1px;
+    grid-template-areas:
+    "area1 area1 area1 area1 area1"
+    "area2 area2 area2 area3 area4"
+    "area5 area5 area6 area6 area6"
+    "area7 area7 area7 area8 area8"
+    "area7 area7 area7 area9 area9"
+    ;
+  }
+.hijo1 {
+    background:slateblue;
+    text-align: center;
+    border: black 5px solid;
+    grid-area: area1;
+    border-style: solid;
+    border-color:white;
+  }
+.hijo2 {
+    background: slateblue;
+    text-align: center;
+    border: black 5px solid;
+    grid-area: area2;
+    border-style: solid;
+    border-color:white;
+  }
+.hijo3 {
+    background: slateblue;
+    text-align: center;
+    border: black 5px solid;
+    grid-area: area3;
+    border-style: solid;
+    border-color: white;
+  }
+.hijo4 {
+    background: slateblue;
+    text-align: center;
+    border: black 5px solid;
+    grid-area: area4;
+    border-style: solid;
+    border-color: white;
+}
+.hijo5 {
+    background: slateblue;
+    text-align: center;
+    border: black 5px solid;
+    grid-area: area5;
+    border-style: solid;
+    border-color: white;
+}
+.hijo6 {
+    background: slateblue;
+    text-align: center;
+    border: black 5px solid;
+    grid-area: area6;
+    border-style: solid;
+    border-color: white;
+} 
+.hijo7 {
+    background: slateblue;
+    text-align: center;
+    border: black 5px solid;
+    grid-area: area7;
+    border-style: solid;
+    border-color: white;
+}
+.hijo8 {
+    background: slateblue;
+    text-align: center;
+    border: black 5px solid;
+    grid-area: area8;
+    border-style: solid;
+    border-color: white;
+}
+.hijo9 {
+    background: slateblue;
+    text-align: center;
+    border: black 5px solid;
+    grid-area: area9;
+    border-style: solid;
+    border-color: white;
+}
+/*flex*/
+.flex-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-content: stretch;
+    height: 10px;
+    flex-wrap: wrap;
+    
+  }
+.flex-item {
+    border: 5px solid black;
+    margin: 1px;
+    background-color:slateblue;
+    height: 200px;
+    border-style: solid;
+    border-color: white;
+  }
+  
+  .grow-1 {
+    flex-grow: 1;
+    
+  }
+  
+  .grow-2 {
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    
+  }
+  
+  .grow-3 {
+    flex-grow: 3
+  }
+  .caja1 {
+    border: 5px solid black;
+    margin: 10px;
+    background-color: rgb(184, 120, 228);
+    height: 50px;
+    width: calc(90% - 20px);
+    border-style: solid;
+    border-color: white;
+  }
+  .caja2 {
+    width: calc(40% - 20px);
+    border: 5px solid black;
+    margin: 15px;
+    background-color:  rgb(184, 120, 228);
+    height: 90px;
+    border-style: solid;
+    border-color: white;
+  }
+  .caja3 {
+    width: calc(40% - 10px);
+    border: 5px solid black;
+    margin: 15px;
+    background-color:rgb(184, 120, 228);
+    height: 90px;
+    border-style: solid;
+    border-color: white;
+  }
